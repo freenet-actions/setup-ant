@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mtbui01/setup-ant.git"
+    "url": "git+https://github.com/md-actions/setup-ant.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "",
+  "author": "mtbui01",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "1.2.6",
