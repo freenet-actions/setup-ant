@@ -1,5 +1,5 @@
 # setup-ant
-[![LICENSE](https://img.shields.io/github/license/md-actions/setup-ant)](https://github.com/ambientlight/md-actions/setup-ant/blob/main/LICENSE)
+[![LICENSE](https://img.shields.io/github/license/md-actions/setup-ant)](https://github.com/ambientlight/md-actions/setup-ant/main/LICENSE)
 
 This action sets up ant tool. It downloads ant binaries from the https://archive.apache.org/dist/ant/binaries and adds path to PATH
 
