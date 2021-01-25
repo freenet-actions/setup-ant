@@ -1,15 +1,15 @@
-import * as core from '@actions/core';
-import * as installer from './installer';
+import * as core from '@actions/core'
+import * as installer from './installer'
 
-async function run() {
+async function run(): Promise<void> {
   try {
-    let version = core.getInput('ant-version');
+    const version = core.getInput('ant-version')
     if (version) {
-      await installer.getAnt(version);
+      await installer.getAnt(version)
     }
   } catch (error) {
-    core.setFailed(error.message);
+    core.setFailed(error.message)
   }
 }
 
-run();
+run()
