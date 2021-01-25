@@ -37,10 +37,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getAnt = void 0;
-let tempDirectory = process.env['RUNNER_TEMPDIRECTORY'] || '';
 const core = __importStar(__webpack_require__(186));
 const tc = __importStar(__webpack_require__(784));
 const path = __importStar(__webpack_require__(622));
+let tempDirectory = process.env['RUNNER_TEMPDIRECTORY'] || '';
 if (!tempDirectory) {
     let baseLocation;
     if (process.platform === 'win32') {
@@ -72,11 +72,10 @@ function downloadAnt(version) {
     return __awaiter(this, void 0, void 0, function* () {
         const toolDirectoryName = `apache-ant-${version}`;
         const downloadUrl = `https://archive.apache.org/dist/ant/binaries/${toolDirectoryName}-bin.tar.gz`;
-        console.log(`downloading ${downloadUrl}`);
         try {
             const downloadPath = yield tc.downloadTool(downloadUrl);
             const extractedPath = yield tc.extractTar(downloadPath);
-            let toolRoot = path.join(extractedPath, toolDirectoryName);
+            const toolRoot = path.join(extractedPath, toolDirectoryName);
             return yield tc.cacheDir(toolRoot, 'ant', version);
         }
         catch (err) {
@@ -127,7 +126,7 @@ const installer = __importStar(__webpack_require__(480));
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            let version = core.getInput('ant-version');
+            const version = core.getInput('ant-version');
             if (version) {
                 yield installer.getAnt(version);
             }
