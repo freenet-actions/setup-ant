@@ -7,7 +7,7 @@ async function run(): Promise<void> {
     if (version) {
       await installer.getAnt(version)
     }
-  } catch (error) {
+  } catch (error: any) {
     core.setFailed(error.message)
   }
 }
