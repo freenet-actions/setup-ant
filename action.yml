@@ -1,6 +1,6 @@
 name: 'Setup Ant'
 description: 'Install ant'
-author: 'mobilcom-debitel'
+author: 'freenet'
 inputs:
   ant-version:
     description: 'Ant version' 
