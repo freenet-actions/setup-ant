@@ -5,7 +5,7 @@ inputs:
   ant-version:
     description: 'Ant version' 
     required: true
-    default: '1.10.13'
+    default: '1.10.14'
 runs:
   using: 'node16'
   main: 'dist/index.js'
