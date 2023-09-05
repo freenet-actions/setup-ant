@@ -1,6 +1,6 @@
 {
   "name": "setup-ant",
-  "version": "2.0.7",
+  "version": "3.0.0",
   "private": true,
   "description": "setup ant",
   "main": "lib/setup-ant.js",
