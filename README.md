@@ -6,6 +6,6 @@ This action sets up ant tool. It downloads ant binaries from the https://archive
 
 # Usage
 ```yaml
-- uses: freenet-actions/setup-ant@v2
+- uses: freenet-actions/setup-ant@v3
   with:
     ant-version: '1.10.14' #optional, the Ant version to make available on the path (default: 1.10.14)
